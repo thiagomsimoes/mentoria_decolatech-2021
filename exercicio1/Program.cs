@@ -6,38 +6,60 @@ namespace exercicio1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Selecione uma das opções abaixo:");
-            Console.WriteLine("1 - Adicionar Novo Aluno");
-            Console.WriteLine("2 - Exibir Listagem dos Alunos");
-            Console.WriteLine("3 - Calcular Média Geral");
-            Console.WriteLine("X - Sair");
+            
+            Aluno[] alunos = new Aluno[5]; //Cria o array do tipo aluno com até 5 elementos
+            var indicealuno=0;
 
-            string opcaousuario=Console.ReadLine();
+            string opcaousuario = Obter_opcaousuario();
 
-            while(opcaousuario.ToUpper()!="X")
+            while (opcaousuario.ToUpper()!="X")
             {
-                switch(opcaousuario)
-                {
-                    case "1":
-                        Console.WriteLine("--1--");
-                        break;
+              switch(opcaousuario)
+              {
+                case "1":
+                    Console.WriteLine("Insira o Nome do Aluno:");
+                    Aluno aluno = new Aluno();
+                    aluno.Nome = Console.ReadLine();
+                    Console.WriteLine("Insira a Nota do Aluno:");
 
-                     case "2":
-                         Console.WriteLine("--2--");
-                        break;
+                    if(decimal.TryParse(Console.ReadLine(), out decimal nota))
+                    {
+                        aluno.Nota = nota;
+                    }
 
-                    case "3":
-                        Console.WriteLine("--3--");
-                        break;
+                    else
+                    {
+                        throw new ArgumentException("Valor da nota deve ser decimal");
+                    }
 
-                    default:
-                        throw new ArgumentOutOfRangeException("Error");
-                }    
-                
-                opcaousuario=Console.ReadLine();
-                 
+                    alunos[indicealuno]=aluno;
+                    
+                    break;
+
+
+
+              }
+
+              opcaousuario = Obter_opcaousuario();
+              indicealuno=+1;   
+
+
             }
 
+        }
+
+        private static string Obter_opcaousuario()
+        {
+            string opcaousuario;
+            Console.WriteLine();
+            Console.WriteLine("Insira a opção desejada:");
+            Console.WriteLine("1 - Adicionar Novo Aluno");
+            Console.WriteLine("2 - Consultar Listagem de Alunos");
+            Console.WriteLine("3 - Consultar Média Geral");
+            Console.WriteLine("X - Sair");
+
+            opcaousuario = Console.ReadLine();
+            return opcaousuario;
         }
     }
 }
