@@ -33,15 +33,62 @@ namespace exercicio1
                     }
 
                     alunos[indicealuno]=aluno;
+                    indicealuno++;
                     
                     break;
+                
+                case "2":
+                    foreach (var a in alunos)
+                        if (a.Nome != null)
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine($"Nome do Aluno: {a.Nome} - Nota: {a.Nota}");     
+                        
+                        }       
+                    break;
+                
+                case "3":
+                    decimal notas = new decimal();
+                    int n_alunos = 0;
+
+                    foreach (var b in alunos)
+                        if (b.Nome != null)
+                        {
+                            notas =+ b.Nota;
+                            n_alunos++;
+                        } 
+
+                    decimal media=notas/n_alunos;       
+                    
+                        ConceitoEnum ConceitoGeral;
+
+                        if (media<2)
+                            ConceitoGeral = ConceitoEnum.E;
+                        
+                        else if (media <4)
+                            ConceitoGeral = ConceitoEnum.D;
+
+                        else if (media <6)
+                            ConceitoGeral = ConceitoEnum.C;
+                        
+                        else if (media <8)
+                            ConceitoGeral = ConceitoEnum.B;
+
+                        else
+                            ConceitoGeral = ConceitoEnum.A;
+
+                    Console.WriteLine();
+                    Console.WriteLine($"Média Geral: {media} - Conceito: {ConceitoGeral}");  
+
+                    break;
+
 
 
 
               }
 
               opcaousuario = Obter_opcaousuario();
-              indicealuno=+1;   
+                 
 
 
             }
