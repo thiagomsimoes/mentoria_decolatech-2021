@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b2d6f747-dbc4-4734-84ea-57f722c46e53": {
+      "ProjectGuid": "b2d6f747-dbc4-4734-84ea-57f722c46e53",
+      "DisplayName": "AgenciaBancaria.Dominio",
+      "ColorIndex": 0
+    },
+    "8b7a9b6e-d969-4817-8327-2ff66dc338e7": {
+      "ProjectGuid": "8b7a9b6e-d969-4817-8327-2ff66dc338e7",
+      "DisplayName": "AgenciaBancaria.App",
+      "ColorIndex": 1
+    },
+    "d11da06f-c3b6-45c6-b51a-638a49e2c6e2": {
+      "ProjectGuid": "d11da06f-c3b6-45c6-b51a-638a49e2c6e2",
+      "DisplayName": "AgenciaBancaria.App",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
