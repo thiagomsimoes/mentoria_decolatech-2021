@@ -8,30 +8,43 @@ namespace AgenciaBancaria.App
     {
         static void Main(string[] args)
         {
-            try
+            Console.WriteLine("Seja Bem-vindo ao Banco DIO");
+
+            string opcao_usuario = MenuPrincipal();
+
+            while (opcao_usuario.ToUpper() != "X")
             {
-                Endereco endereco = new Endereco("rua 1", "200000", "RJ", "Rio de Janeiro");
-                Documentos doc = new Documentos("130.093.377-55", "123236569");
-                Cliente cliente = new Cliente("asv", "afgs",endereco,doc);
+                switch (opcao_usuario)
+                {
+                    case "1":
+                        {
+                            break;
+                        }
 
-                string senha = "ab123456";
-                ContaBancaria conta = new ContaBancaria(cliente,senha);
-
-                conta.AbrirConta(1000);
-
-                conta.Sacar(100, senha);
-                
-
-                
-
-                  
-
+                    case "2":
+                        {
+                            break;
+                        }
+                }
+                opcao_usuario = MenuPrincipal();
             }
-            
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            Console.WriteLine("Obrigado por utilizar o Banco DIO");
+
+
+
+
+        }
+
+        private static string MenuPrincipal()
+        {
+            Console.WriteLine("Digite a opção desejada:" +
+                             "\n 1 - Gerenciar Contas" +
+                             "\n 2 - Acesso Conta" +
+                             "\n X - Sair"
+                             );
+
+            string opcao_cliente = Console.ReadLine();
+            return opcao_cliente;
         }
     }
 }

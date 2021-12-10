@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\t-msi\\.nuget\\packages\\": {},
+    "C:\\Users\\adcon.SAMSUNG_I3_NOTE\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\t-msi\\workspace\\Dotnet\\mentoria\\AgenciaBancaria\\AgenciaBancaria.App\\AgenciaBancaria.App.csproj",
+      "projectUniqueName": "C:\\Users\\adcon.SAMSUNG_I3_NOTE\\Documents\\repos\\mentoria_decolatech-2021\\AgenciaBancaria\\AgenciaBancaria.App\\AgenciaBancaria.App.csproj",
       "projectName": "AgenciaBancaria.App",
-      "projectPath": "C:\\Users\\t-msi\\workspace\\Dotnet\\mentoria\\AgenciaBancaria\\AgenciaBancaria.App\\AgenciaBancaria.App.csproj",
-      "packagesPath": "C:\\Users\\t-msi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\t-msi\\workspace\\Dotnet\\mentoria\\AgenciaBancaria\\AgenciaBancaria.App\\obj\\",
+      "projectPath": "C:\\Users\\adcon.SAMSUNG_I3_NOTE\\Documents\\repos\\mentoria_decolatech-2021\\AgenciaBancaria\\AgenciaBancaria.App\\AgenciaBancaria.App.csproj",
+      "packagesPath": "C:\\Users\\adcon.SAMSUNG_I3_NOTE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adcon.SAMSUNG_I3_NOTE\\Documents\\repos\\mentoria_decolatech-2021\\AgenciaBancaria\\AgenciaBancaria.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\t-msi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\adcon.SAMSUNG_I3_NOTE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -58,8 +58,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\t-msi\\workspace\\Dotnet\\mentoria\\AgenciaBancaria\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj": {
-              "projectPath": "C:\\Users\\t-msi\\workspace\\Dotnet\\mentoria\\AgenciaBancaria\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj"
+            "C:\\Users\\adcon.SAMSUNG_I3_NOTE\\Documents\\repos\\mentoria_decolatech-2021\\AgenciaBancaria\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj": {
+              "projectPath": "C:\\Users\\adcon.SAMSUNG_I3_NOTE\\Documents\\repos\\mentoria_decolatech-2021\\AgenciaBancaria\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj"
             }
           }
         }
